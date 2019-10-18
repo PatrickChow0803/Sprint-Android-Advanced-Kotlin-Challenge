@@ -51,6 +51,7 @@ The requirements for this project are as follows:
 	
 2. One controller which will show 2 matrices at once and a button to perform the calculation
     * The user must be able to edit the values in the matrices
+	
 3. Another controller which will show the result of the calculation as another matrix
 
     > You may have issues rebuilding your first controller after returning from your second one, a few tips:
