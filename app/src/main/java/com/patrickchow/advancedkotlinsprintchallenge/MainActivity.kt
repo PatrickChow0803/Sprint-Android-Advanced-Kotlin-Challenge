@@ -6,6 +6,7 @@ import android.view.ViewGroup
 import com.bluelinelabs.conductor.Conductor
 import com.bluelinelabs.conductor.Router
 import com.bluelinelabs.conductor.RouterTransaction
+import com.patrickchow.advancedkotlinsprintchallenge.controller.MultiplyControl
 
 class MainActivity : AppCompatActivity() {
 
@@ -21,7 +22,7 @@ class MainActivity : AppCompatActivity() {
         // Could have also just use cl_activity_main_parent instead of container
         router = Conductor.attachRouter(this, container, savedInstanceState)
         if(!router.hasRootController()) {
-            router.setRoot(RouterTransaction.with(HomeController("Testing")))
+            router.setRoot(RouterTransaction.with(MultiplyControl()))
         }
 
     }
