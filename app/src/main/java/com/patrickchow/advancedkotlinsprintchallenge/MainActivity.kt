@@ -10,6 +10,10 @@ import com.patrickchow.advancedkotlinsprintchallenge.controller.MultiplyControl
 
 class MainActivity : AppCompatActivity() {
 
+    companion object{
+        const val BUNDLE_KEY = "values"
+    }
+
     private lateinit var router: Router
     private val container: ViewGroup by lazy {
         this.findViewById<ViewGroup>(R.id.cl_activity_main_parent)
