@@ -18,6 +18,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        // Could have also just use cl_activity_main_parent instead of container
         router = Conductor.attachRouter(this, container, savedInstanceState)
         if(!router.hasRootController()) {
             router.setRoot(RouterTransaction.with(HomeController("Testing")))
